@@ -3,7 +3,7 @@
 #SBATCH --gres=gpu:4  
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=48
-#SBATCH --account=training2543
+#SBATCH --account=training2556
 #SBATCH --partition=dc-gpu
 #SBATCH --time=00:30:00
 #SBATCH --output=%j.out
@@ -32,8 +32,8 @@ export MASTER_PORT=7010
 
 # We activate our environemnt
 <<<<<<< HEAD
-source /p/scratch/training2543/benassou1/sc_venv_template/activate.sh
-# source /p/scratch/training2543/benassou1/2025-06-course-Bringing-Deep-Learning-Workloads-to-JSC-supercomputers/code/parallelize/sc_venv_template/activate.sh
+source /p/scratch/training2556/benassou1/sc_venv_template/activate.sh
+# source /p/scratch/training2556/benassou1/2025-06-course-Bringing-Deep-Learning-Workloads-to-JSC-supercomputers/code/parallelize/sc_venv_template/activate.sh
 =======
 source $HOME/course/sc_venv_template/activate.sh
 >>>>>>> b32ad3d7f50eec10c0873b7931eb268487e14b1a

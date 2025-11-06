@@ -231,7 +231,7 @@ Please open this document on your own browser! We will need it for the exercises
 
 #### Getting compute time
 - Go to [https://go.fzj.de/bringing-dl-workloads-to-jsc-project-join](https://go.fzj.de/bringing-dl-workloads-to-jsc-project-join)
-- Join the course project `training2543`
+- Join the course project `training2556`
 - Sign the Usage Agreements ([Video](https://drive.google.com/file/d/1mEN1GmWyGFp75uMIi4d6Tpek2NC_X8eY/view))
 - Compute time allocation is based on compute projects. For every compute job, a compute project pays.
 - Time is measured in core-hours. One hour of Jureca DC is 128 core-hours.
@@ -485,10 +485,10 @@ strube1@jrlogin03~ $
 
 ```bash
 # Create a folder for myself
-mkdir $PROJECT_training2543/$USER
+mkdir $PROJECT_training2556/$USER
 
 # Create a shortcut for the project on the home folder
-rm -rf ~/course ; ln -s $PROJECT_training2543/$USER ~/course
+rm -rf ~/course ; ln -s $PROJECT_training2556/$USER ~/course
 
 # Enter course folder and
 cd ~/course
@@ -751,7 +751,7 @@ Simple Linux Utility for Resource Management
 
 ``` {.bash .number-lines}
 #!/bin/bash
-#SBATCH --account=training2543           # Who pays?
+#SBATCH --account=training2556           # Who pays?
 #SBATCH --nodes=1                        # How many compute nodes
 #SBATCH --job-name=matrix-multiplication
 #SBATCH --ntasks-per-node=1              # How many mpi processes/node
@@ -809,7 +809,7 @@ squeue --me
 ### Reservations
 
 - Some partitions have reservations, which means that only certain users can use them at certain times.
-- For this course, it's called `training2543`
+- For this course, it's called `training2556`
 
 --- 
 
@@ -957,7 +957,7 @@ code fastai.sbatch
 
 ```bash
 #!/bin/bash
-#SBATCH --account=training2543
+#SBATCH --account=training2556
 #SBATCH --mail-user=MYUSER@fz-juelich.de
 #SBATCH --mail-type=ALL
 #SBATCH --nodes=1
@@ -1029,7 +1029,7 @@ If you run it longer, you will get the actual error:
 
 ```python
 Traceback (most recent call last):
-  File "/p/project/training2543/strube1/cats.py", line 5, in <module>
+  File "/p/project/training2556/strube1/cats.py", line 5, in <module>
     path = untar_data(URLs.PETS)/'images'
     ...
     ...
@@ -1358,7 +1358,7 @@ On the supercomputer:
 srun --time=00:05:00 \
      --nodes=1 --ntasks=1 \
      --partition=dc-gpu \
-     --account training2543 \
+     --account training2556 \
      --cpu_bind=none \
      --pty /bin/bash -i
 
