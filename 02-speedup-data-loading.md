@@ -2,7 +2,7 @@
 author: Alexandre Strube // Sabrina Benassou 
 title: Bringing Deep Learning Workloads to JSC supercomputers
 subtitle: Data loading
-date: September 16, 2025
+date: December 2nd, 2025
 ---
 
 ### Schedule for day 2
