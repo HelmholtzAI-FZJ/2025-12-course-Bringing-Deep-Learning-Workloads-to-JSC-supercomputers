@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
   <meta name="author" content="Alexandre Strube // Sabrina Benassou">
-  <meta name="dcterms.date" content="2025-09-16">
   <title>Accessing the machines, intro</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -15,9 +14,6 @@
     .reveal .sourceCode {  /* see #7635 */
       overflow: visible;
     }
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -1078,7 +1074,7 @@ class="sourceCode numberSource bash number-lines"><code class="sourceCode bash">
 <span id="cb17-8"><a href="#cb17-8"></a><span class="co">#SBATCH --error=error.%j</span></span>
 <span id="cb17-9"><a href="#cb17-9"></a><span class="co">#SBATCH --time=00:01:00          # For how long can it run?</span></span>
 <span id="cb17-10"><a href="#cb17-10"></a><span class="co">#SBATCH --partition=dc-gpu         # Machine partition</span></span>
-<span id="cb17-11"><a href="#cb17-11"></a><span class="co">#SBATCH --reservation=ai-course-day1 # For today only</span></span>
+<span id="cb17-11"><a href="#cb17-11"></a><span class="co">#SBATCH --reservation=training2556 # For today only</span></span>
 <span id="cb17-12"><a href="#cb17-12"></a></span>
 <span id="cb17-13"><a href="#cb17-13"></a><span class="ex">module</span> load Stages/2025</span>
 <span id="cb17-14"><a href="#cb17-14"></a><span class="ex">module</span> load GCC OpenMPI PyTorch  <span class="co"># Load the correct modules on the compute node(s)</span></span>
@@ -1267,7 +1263,7 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb30-1"><a href=
 <span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --error=error.%j</span></span>
 <span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --time=00:20:00</span></span>
 <span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --partition=dc-gpu</span></span>
-<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --reservation=ai-course-day1 # For today only</span></span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="co">#SBATCH --reservation=training2556 # For today only</span></span>
 <span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> <span class="va">$HOME</span>/course/</span>
 <span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> sc_venv_template/activate.sh <span class="co"># Now we finally use the fastai module</span></span>
