@@ -2,7 +2,7 @@
 author: Alexandre Strube // Sabrina Benassou // Ismail Khalfaoui
 title: Bringing Deep Learning Workloads to JSC supercomputers
 subtitle: Recap of Day 1
-date: December 2nd, 2025
+date: December 9th, 2025
 ---
 
 https://indico3-jsc.fz-juelich.de/event/240/
