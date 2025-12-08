@@ -74,7 +74,7 @@ The course material is available at https://go.fzj.de/bringing-dl-workloads-to-j
 
 See you soon, 
 
-Alex and Sabrina
+Alex, Sabrina and Ismail
 
 
 
