@@ -867,20 +867,7 @@ git clone https://gitlab.jsc.fz-juelich.de/kesselheim1/sc_venv_template.git
 pip
 ipykernel
 fastai
-numba==0.60.0
-numpy==1.26.4
-scipy==1.13.1
-matplotlib==3.9.2
-scikit-learn==1.5.2
-pandas==2.2.2
-accelerate==1.1.1
-pyarrow==18.1.0
-transformers==4.46.3
-sentencepiece==0.2.0
-datasets==3.6.0
-fsspec==2025.2.0.*
-torch==2.5.1
-torchrun_jsc>=0.0.15
+torchrun_jsc
 ```
 
 - Run on the terminal: `sc_venv_template/setup.sh`
