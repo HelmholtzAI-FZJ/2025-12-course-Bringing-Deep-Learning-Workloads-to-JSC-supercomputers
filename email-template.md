@@ -49,8 +49,11 @@ The course is platform-independent. It can even be followed by a Windows user, b
 
 - Some knowledge of the Python language.
 
-- (WINDOWS ONLY): You can use WSL to have all Linux tools under windows, but this is optional.. This installs the WSL support for Visual Studio Code, which will install WSL itself (And Ubuntu). https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl - This is a long install, take your time.
-  PLEASE MAKE SURE WSL IS ACTUALLY INSTALLED - Try running it. Check this example: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
+- (WINDOWS ONLY): Windows is problematic with its outdated terminal utilities. 
+
+You can use WSL (Windows subsystem for Linux) to have all Linux tools under windows, but this is optional. And might cause confusion, because this creates a second home directory. 
+
+This installs the WSL support for Visual Studio Code, which will install WSL itself (And Ubuntu). https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl - This is a long install, take your time. Try running it. Check this example: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
 
 ---
 
