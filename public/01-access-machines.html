@@ -19,14 +19,18 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -300,45 +304,45 @@ data-src="images/Logo_FZ_Juelich_rgb_Schutzzone_transparent.svg" /></p>
 <h3 id="schedule-for-day-1">Schedule for day 1</h3>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Time</th>
 <th>Title</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>13:00 - 13:15</td>
 <td>Welcome</td>
 </tr>
-<tr class="even">
+<tr>
 <td>13:15 - 14:00</td>
 <td>Introduction</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>14:00 - 14:15</td>
 <td>Coffee break</td>
 </tr>
-<tr class="even">
+<tr>
 <td>14:16 - 14:30</td>
 <td>Judoor, Keys</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>14:30 - 15:00</td>
 <td>SSH, Jupyter, VS Code</td>
 </tr>
-<tr class="even">
+<tr>
 <td>15:00 - 15:15</td>
 <td>Coffee Break</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>15:15 - 16:00</td>
 <td>Running services on the login and compute nodes</td>
 </tr>
-<tr class="even">
+<tr>
 <td>16:00 - 16:15</td>
 <td>Coffee Break</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>16:30 - 17:00</td>
 <td>Sync (everyone should be at the same point)</td>
 </tr>
@@ -1169,7 +1173,8 @@ class="sourceCode bash"><code class="sourceCode bash"><span id="cb23-1"><a href=
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ipykernel</span></span>
 <span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a><span class="ex">fastai</span></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="ex">torchrun_jsc</span></span></code></pre></div></li>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="ex">torchrun_jsc</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="ex">datasets</span> <span class="co"># Needed for the second day</span></span></code></pre></div></li>
 <li class="fragment"><p>Run on the terminal:
 <code>sc_venv_template/setup.sh</code></p></li>
 </ul>

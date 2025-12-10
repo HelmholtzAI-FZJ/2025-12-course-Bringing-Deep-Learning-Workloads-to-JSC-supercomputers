@@ -868,6 +868,7 @@ pip
 ipykernel
 fastai
 torchrun_jsc
+datasets # Needed for the second day
 ```
 
 - Run on the terminal: `sc_venv_template/setup.sh`
