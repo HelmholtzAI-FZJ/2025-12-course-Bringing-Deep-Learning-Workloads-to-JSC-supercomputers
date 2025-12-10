@@ -19,8 +19,11 @@
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
     ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
       width: 0.8em;
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
@@ -176,168 +179,184 @@ Khalfaoui</p>
 </section>
 <section id="quick-recap" class="slide level2">
 <h2>Quick recap</h2>
-<p>Alexandre led a comprehensive meeting to introduce a course on AI and
-supercomputing at JSC, covering course objectives, supercomputer
-architecture, and the Jureca DC supercomputer specifications. The team
-worked through practical sessions on setting up SSH connections and
-Visual Studio Code for remote development, with Alexandre providing
-step-by-step guidance and troubleshooting support for participants. The
-conversation ended with demonstrations on managing software modules,
-running code on supercomputers, and submitting batch jobs, along with
-discussions about accessing and using supercomputing resources through
-various systems.</p>
+<p>Quick recap</p>
+<p>Alexandre led a comprehensive training session on supercomputer
+usage, covering job submission, resource management, and essential
+configurations including SSH key setup and software module management.
+The session included hands-on guidance for participants to configure
+their environments, troubleshoot connection issues, and properly use the
+supercomputer’s resources through various tools and commands. The
+training concluded with demonstrations on running machine learning tasks
+and neural network training, including discussions on data preprocessing
+and file transfer methods between different computing systems.</p>
+<p>Next steps</p>
+<p>All participants: Complete the survey when sent after the course ends
+Cristina: Create a new SSH key and repeat all configuration steps to fix
+connection issues All participants: Join the TRAINING2556 project if not
+already done to ensure compute time access All participants: Install
+Visual Studio Code and required plugins if not already installed All
+participants: Configure SSH keys and add them to Jureca and JUDAC
+systems via the JuDoor website All participants: Set up IP address
+restrictions on JuDoor for secure access from their locations All
+participants: Create virtual environment using the provided template and
+install required packages All participants: Download the pets dataset on
+login nodes before running training jobs on compute nodes Francesco: Be
+aware that after December 31st, files can still be accessed via JUDAC
+for 3 months for data transfer Antonio : Review the slides and catch up
+on missed content from the beginning of the course Summary</p>
 </section>
-<section id="next-steps" class="slide level2">
-<h2>Next steps</h2>
-<p>All participants: Ensure they can access the supercomputer by the end
-of the day. All participants: Open the provided webpage link for
-accessing course materials. All participants: Join the course Slack
-channel for communications and updates. Hannah: Complete Slack
-registration process. All participants: Set up their SSH keys and Visual
-Studio Code configuration for connecting to the supercomputer. Peter,
-Mawaki, and Michelle: Wait for their supercomputer access to be granted.
-Narimene: Present the first part of the course tomorrow. Ismail: Present
-with Narimene tomorrow about data handling on the supercomputer. Sabrina
-and Ismail: Present on data preparation tomorrow. All participants:
-Prepare their data for proper use on the supercomputer. All
-participants: Learn how to properly upload and organize their data on
-the supercomputer. All participants: Prepare for tomorrow’s session on
-making ML distributed across multiple GPUs and nodes. All participants:
-Prepare their code to utilize all 4 GPUs on a node to avoid wasting
-resources. All participants: Review basic AI concepts if needed,
-possibly using Fast AI resources. All participants: Review the
-documentation link provided for more details about the Jureca DC
-supercomputer. All participants: Utilize their allocated project hours
-within the next 2 weeks. All participants: Contact Alexandre if they
-need more project time beyond the 2-week allocation. All participants:
-Complete the survey at the end of the course. Summary</p>
-</section>
-<section id="ai-and-supercomputing-course-introduction"
+<section id="supercomputer-training-and-best-practices"
 class="slide level2">
-<h2>AI and Supercomputing Course Introduction</h2>
-<p>Alexandre led a meeting to introduce a course on AI and
-supercomputing at JSC. He explained the course objectives, including
-ensuring all participants reach the same level of understanding and
-using interactive sessions to address questions. The team discussed
-accessing necessary materials, including a shared webpage with links to
-training resources, GitLab, and slides. Alexandre provided an overview
-of supercomputers, highlighting their architecture, including login
-nodes, compute nodes, and the importance of high-speed networks. He also
-introduced the Jureca DC supercomputer, detailing its specifications and
-capabilities. The conversation ended with a brief explanation of batch
-processing and Jupyter Notebooks, setting the stage for future
-discussions on using supercomputers for AI tasks.</p>
+<h2>Supercomputer Training and Best Practices</h2>
+<p>Alexandre conducted a training session on using supercomputers,
+focusing on job submission, resource management, and best practices. He
+explained the architecture of supercomputers, distinguishing between
+login nodes and compute nodes, and emphasized the importance of
+efficient resource use due to limited access time. Participants were
+instructed to join a project for access to compute time and were guided
+through configuring their machines for secure SSH connections to the
+supercomputer. Alexandre highlighted the need for batch jobs over
+interactive sessions for optimal use of the machine and encouraged
+questions throughout the session.</p>
 </section>
-<section id="supercomputer-usage-basics-training" class="slide level2">
-<h2>Supercomputer Usage Basics Training</h2>
-<p>Alexandre explained the basics of using a supercomputer, emphasizing
-that jobs enter a queue and resources are shared among users. He
-detailed the process of connecting to the login node, submitting jobs,
-and using the system’s Jupyter environment for small-scale work.
-Alexandre also covered the importance of using exclusive nodes and the
-24-hour job limit, and he provided instructions for connecting to the
-supercomputer using Visual Studio Code with SecureShell.</p>
-</section>
-<section id="ssh-configuration-for-supercomputers-setup"
+<section id="technical-setup-and-security-guidance"
 class="slide level2">
-<h2>SSH Configuration for Supercomputers Setup</h2>
-<p>Alexandre guided participants through setting up SSH configurations
-for connecting to supercomputers, addressing specific issues for
-Windows, Linux, and Mac users. He provided step-by-step instructions for
-creating and configuring SSH keys, managing IP restrictions, and
-uploading public keys to the Jureca system. Participants, including
-Salika and Mathi, received assistance with troubleshooting errors and
-connecting to the remote systems. The session focused on ensuring
-everyone could successfully connect to the supercomputers using Visual
-Studio Code.</p>
+<h2>Technical Setup and Security Guidance</h2>
+<p>Alexandre led a technical session to help participants set up
+necessary tools and configurations for their work. He addressed issues
+such as plugin installations, SSH key setup, and Visual Studio Code
+configurations, providing step-by-step guidance and troubleshooting
+support to participants like Meral and Emil. Participants were reminded
+to avoid reusing SSH keys across different systems for security reasons.
+By the end of the session, Alexandre confirmed that most participants
+had successfully completed the required setup, with a few still working
+through issues.</p>
 </section>
-<section id="ssh-setup-in-jureca-supercomputer" class="slide level2">
-<h2>SSH Setup in Jureca Supercomputer</h2>
-<p>Alexandre guided participants through setting up SSH connections to
-the Jureca supercomputer using Visual Studio Code. He helped Scherer
-successfully connect by configuring the SSH extension and accessing
-remote files. Tak encountered permission issues with private key files
-stored on a local drive, which Alexandre helped resolve by changing file
-permissions and copying keys to the user directory. Somayeh was able to
-connect via SSH but had issues with the SSH extension not displaying
-properly in Visual Studio Code, which Alexandre addressed by
-troubleshooting the configuration settings.</p>
-</section>
-<section id="ssh-and-vs-code-setup" class="slide level2">
-<h2>SSH and VS Code Setup</h2>
-<p>Alexandre guided participants through setting up SSH access and
-Visual Studio Code for remote development on a supercomputer. He helped
-Somayeh and Mathi resolve issues with accessing and configuring the SSH
-keys, including correcting file paths and installing the necessary VS
-Code extensions. The session concluded with participants successfully
-accessing the correct working directory and opening terminals in VS
-Code, with Alexandre confirming that everyone was set up properly for
-the next steps.</p>
-</section>
-<section id="supercomputer-software-management-demonstration"
+<section id="ssh-configuration-and-troubleshooting-guide"
 class="slide level2">
-<h2>Supercomputer Software Management Demonstration</h2>
-<p>Alexandre demonstrated how software is managed on the supercomputer,
-explaining the module system which allows multiple versions of software
-to be available without overwhelming the system. He showed how to search
-for and load specific software modules using the module spider command,
-and explained the hierarchy of modules including compiler, MPI, and
-application levels. Alexandre also demonstrated how to copy files to the
-supercomputer using the file browser interface, allowing users to work
-directly with files stored on the system.</p>
+<h2>SSH Configuration and Troubleshooting Guide</h2>
+<p>The team discussed SSH configuration issues and provided guidance on
+setting up SSH keys and config files for different operating systems.
+Alexandre helped several team members troubleshoot their configurations,
+particularly focusing on Windows Subsystem for Linux (WSL) users who
+needed to adjust their paths and file locations. The team confirmed that
+the config file should be empty unless users are working with it, and
+emphasized that WSL creates two home directories which can cause
+confusion with SSH searches.</p>
 </section>
-<section id="supercomputer-matrix-multiplication-training-session"
-class="slide level2">
-<h2>Supercomputer Matrix Multiplication Training Session</h2>
-<p>Alexandre led a session on running matrix multiplication code on a
-supercomputer, explaining the difference between login nodes and compute
-nodes, and the importance of using compute nodes with GPUs for machine
-learning tasks. He demonstrated how to submit a job using Slurm,
-including creating a batch script and submitting it with sbatch, and
-showed how to monitor jobs using the squeue command. Alexandre also
-explained the concept of reservations, which allows a group to reserve
-specific resources on the supercomputer for a limited time, and in this
-case, secured 20 nodes for 3 hours to run the matrix multiplication
-code.</p>
+<section id="ssh-key-setup-for-jureca" class="slide level2">
+<h2>SSH Key Setup for Jureca</h2>
+<p>Alexandre guided participants through the process of setting up SSH
+key access to Jureca, a supercomputer. He explained how to generate and
+configure SSH keys, including restrictions by IP address, and
+demonstrated the process using his own IP address. Participants were
+instructed to copy their public keys into the Jureca system’s SSH key
+management interface. Mohammad experienced some difficulties but was
+able to complete the process with Alexandre’s help. The session
+concluded with Alexandre explaining the purpose of JUDAC, a separate
+machine that provides access to file systems but not compute nodes,
+allowing users to save their files after project completion.</p>
 </section>
-<section id="supercomputer-code-execution-demonstration"
+<section id="ssh-configuration-and-troubleshooting"
 class="slide level2">
-<h2>Supercomputer Code Execution Demonstration</h2>
-<p>Alexandre demonstrated how to run code on a supercomputer, including
-setting up files, installing software using a requirements file, and
-creating a virtual environment. He explained the difference between
-login nodes (which have internet access) and compute nodes (which
-don’t), and showed how to download a dataset for a simple cats vs dogs
-classification example. When attempting to run the full training script,
-they encountered an internet connectivity issue on the compute node, so
-Alexandre modified the approach to first download the dataset on the
-login node before running the complete script.</p>
+<h2>SSH Configuration and Troubleshooting</h2>
+<p>Alexandre guided the team through SSH key configuration and
+troubleshooting, helping Robert and Cristina connect to the Jureca
+machine. He discovered that Robert was using the wrong username and
+fixed it by showing him the correct configuration. Cristina had issues
+with permission denied errors, which Alexandre helped resolve by showing
+her the correct SSH configuration lines to add to her file. Meral also
+faced permission issues, and Ismail helped troubleshoot her connection
+problems, discovering that her private key file was in a non-standard
+location (MNT) on her Windows machine.</p>
 </section>
-<section id="supercomputer-batch-processing-demonstration"
+<section id="ssh-setup-and-troubleshooting-session"
 class="slide level2">
-<h2>Supercomputer Batch Processing Demonstration</h2>
-<p>Alexandre demonstrated how to submit batch files to the
-supercomputer, explaining the process of using sbatch and monitoring
-jobs through the command line. He showed how to use TensorBoard to
-visualize training progress and explained the concept of port forwarding
-to access web services on the supercomputer. Alexandre also introduced
-Blahblador, an AI chatbot service available for free to help with coding
-and questions about the system.</p>
+<h2>SSH Setup and Troubleshooting Session</h2>
+<p>Alexandre guided Meral through the process of setting up SSH access
+to a supercomputer, resolving file permission issues on Windows by
+adjusting security settings. He helped other participants troubleshoot
+similar issues, including Patrick who was using a Mac and Fabian who
+needed to configure two-factor authentication. By the end of the
+session, all participants were able to successfully connect to the
+remote machine through Visual Studio Code.</p>
 </section>
-<section id="supercomputing-resource-access-guidelines"
+<section id="supercomputer-environment-setup-tutorial"
 class="slide level2">
-<h2>Supercomputing Resource Access Guidelines</h2>
-<p>The meeting focused on discussing access and usage of supercomputing
-resources, particularly the Jülich cluster. Alexandre explained how to
-submit multiple jobs using job arrays in Slurm and recommended using
-JUBE for organizing runs. He described the simple process for accessing
-compute time through helmodes.ai, which doesn’t require a lengthy
-proposal process. The discussion also covered software installation,
-with Alexandre advising that users can install their own software when
-practical, though complex installations are handled by the team.
-Finally, Alexandre demonstrated how to access graphical applications
-like ParaView and Blender on the cluster using remote desktop
-functionality.</p>
+<h2>Supercomputer Environment Setup Tutorial</h2>
+<p>Alexandre guided participants through the process of accessing and
+setting up their environment on a supercomputer, emphasizing the
+importance of using project directories to avoid filling the home
+directory. He explained the use of the module system, which allows users
+to access different versions of software, and demonstrated how to search
+for and load specific software modules. The session aimed to prepare
+participants for the upcoming course by ensuring they had the necessary
+software and configurations in place.</p>
+</section>
+<section id="supercomputer-module-management-tutorial"
+class="slide level2">
+<h2>Supercomputer Module Management Tutorial</h2>
+<p>Alexandre provided a tutorial on using modules in the supercomputer
+environment, explaining how to load different software versions without
+conflicting with each other. He demonstrated how to manage modules with
+specific versions, compilers, and MPI configurations, and showed how to
+purge modules when needed. Florianscheidl asked about using modules with
+Python package managers like UV, and Alexandre explained how to combine
+system modules with virtual environments using scripts and commands like
+uvip. The session concluded with Alexandre demonstrating how to easily
+transfer and edit files on the supercomputer using a web interface,
+rather than requiring commands like SCP or SFTP.</p>
+</section>
+<section id="supercomputer-code-execution-guidance"
+class="slide level2">
+<h2>Supercomputer Code Execution Guidance</h2>
+<p>Alexandre helped Patrick and Mohammad resolve issues with running
+code on a supercomputer using Visual Studio Code. He guided them through
+connecting to the supercomputer, opening and running a Python script for
+matrix multiplication, and explained the importance of running code on
+the login node rather than the compute nodes. Both Patrick and Mohammad
+successfully executed the code after following Alexandre’s
+instructions.</p>
+</section>
+<section id="supercomputer-training-for-matrix-multiplication"
+class="slide level2">
+<h2>Supercomputer Training for Matrix Multiplication</h2>
+<p>The meeting focused on teaching participants how to use a
+supercomputer for running matrix multiplication and neural network
+training. Alexandre explained the importance of using compute nodes
+instead of login nodes and introduced SLURM, a resource management
+system, for submitting jobs. He demonstrated how to create and submit a
+batch script, manage jobs using the sbatch command, and monitor job
+status with the squeue command. The group also discussed how to set up
+virtual environments and install additional software packages using a
+template script. Participants were encouraged to experiment with the
+process and ask questions.</p>
+</section>
+<section id="virtual-environment-setup-for-ml" class="slide level2">
+<h2>Virtual Environment Setup for ML</h2>
+<p>Alexandre demonstrated how to set up a virtual environment with
+necessary libraries for machine learning tasks and explained the process
+of running a simple cat/dog classifier using FastAI. He highlighted that
+the compute nodes lack internet access, causing the dataset download to
+fail, and showed a workaround by modifying the script to run the data
+preprocessing steps on the login node while commenting out the training
+code. Patrick confirmed experiencing the same issue, and Alexandre
+clarified that the solution involves running the modified script on the
+login node to download and preprocess data.</p>
+</section>
+<section id="neural-network-training-and-ssh" class="slide level2">
+<h2>Neural Network Training and SSH</h2>
+<p>The meeting focused on training a neural network using SSH port
+forwarding and Visual Studio Code. Alexandre demonstrated how to
+download and train a neural network model, achieving 99% accuracy. He
+also explained how to use TensorBoard for monitoring the training
+process and how to access the supercomputer’s web server through SSH
+port forwarding. The group discussed file transfer methods, with
+Alexandre recommending rsync for large files and UFTP for very large
+datasets. Questions were answered about accessing different computing
+systems (JUDAC, Jules Booster) and the availability of course materials.
+The session concluded with a reminder that a survey would be sent after
+the course ends.</p>
 </section></section>
     </div>
   </div>
