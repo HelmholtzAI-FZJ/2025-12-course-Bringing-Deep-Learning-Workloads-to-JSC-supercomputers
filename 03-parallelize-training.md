@@ -10,7 +10,7 @@ date: December 10th, 2025
 - Move to the correct folder
     
     ```bash
-    cd 2025-06-course-Bringing-Deep-Learning-Workloads-to-JSC-supercomputers/code/parallelize/
+    cd 2025-12-course-Bringing-Deep-Learning-Workloads-to-JSC-supercomputers/code/parallelize/
     ```
 
 ---
